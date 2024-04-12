@@ -1,0 +1,10 @@
+divide and conquer
+is the technique that divide the problem into same subproblems and how much, that the subproblem become trivial.
+merge sort divide array into subarrays and try to solve them until it reaches the arrays of one lengths and after merges this arrays
+merge sort complexity is O(nlog(n))
+for arr.length = 16: 7, 8, 3, 9, 10, 4, 1, 11, 12, 5, 13, 14, 6, 2, 0 of calling merge
+proofs of merge sorts
+1) tree method (graphik tsari)
+2) substiturtion method (T erovna)
+Tasks
+implement mergesort: and compare to Insertion sort
