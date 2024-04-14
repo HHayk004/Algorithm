@@ -1,0 +1,10 @@
+LeetCode: 744 -> 2529 -> 2540 -> 189
+
+Tasks:
+Leetcode: 
+48 (Rotate Image) low priority
+35 (upper and lower bound without build in functionality using)
+26 (std::unique or std::remove_if)
+1979
+1991
+9
