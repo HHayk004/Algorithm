@@ -1,0 +1,7 @@
+Implementing stock proglem with O(n*log(n)) complexity
+
+Tasks:
+LeetCode: 53, 121, 169 (3 variations), 74, 191, 153, 122, 771, 1768, 2363, 1754, 75
+Stresses'sa algoritm with merge
+
+Boyer-Moss for 53
