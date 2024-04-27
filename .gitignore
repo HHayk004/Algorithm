@@ -1,0 +1,30 @@
+# CMake build directory
+*/build/
+
+# Visual Studio Code settings
+.vscode/
+
+# Compiled binary files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+
+# Executables
+*.exe
+*.out
+
+# CMake generated files
+*/CMakeCache.txt
+*/CMakeFiles/
+*/CMakeScripts/
+*/cmake_install.cmake
+*/compile_commands.json
+*/Makefile
+
+# Other generated files
+*.cmake.user
+*.cmake.gcno
+*.cmake.gcda
