@@ -5,3 +5,46 @@ LeetCode: 53, 121, 169 (3 variations), 74, 191, 153, 122, 771, 1768, 2363, 1754,
 Stresses'sa algoritm with merge
 
 Boyer-Moss for 53
+
+1754 Task
+class Solution {
+public:
+    string largestMerge(string word1, string word2) {
+        string answer;
+        int i = 0;
+        int j = 0;
+        while (i < word1.size() || j < word2.size())
+        {
+            if (i == word1.size())
+            {
+                answer += word2[j];
+                ++j;
+            }
+
+            else if (j == word2.size())
+            {
+                answer += word1[i];
+                ++i;
+            }
+
+            else if (word1[i] > word2[j])
+            {
+                answer += word1[i];
+                ++i;
+            }
+
+            else if (word1[i] < word2[j])
+            {
+                answer += word2[i];
+                ++j;
+            }
+
+            else
+            {
+                // this case you need to implement
+            }
+        }
+
+        return answer;
+    }
+};
