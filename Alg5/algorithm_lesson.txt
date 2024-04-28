@@ -1,0 +1,37 @@
+leetcode 1754 not finished
+
+class Solution {
+public:
+    string largestMerge(string word1, string word2) {
+        int i = 0;
+        int j = 0;
+        int tmp_counter = 0;
+        string answer = "";
+        while (i + tmp_count < word1.size() && j + tmp_count < word2.size())
+        {
+            if (word1[i + tmp_count] > word2[j + tmp_count])
+            {
+                i += tmp_count;
+                answer += word1[i];
+                ++i;
+                tmp_count = 0;
+            }
+
+            else if (word1[i + tmp_count] < word2[j + tmp_count])
+            {
+                j += tmp_count;
+                answer += word2[j];
+                ++j;
+                tmp_count = 0;
+            }
+
+            else
+            {
+                answer += word1[i + tmp_count];
+                ++tmp_count;
+            }
+        }
+
+        return answer;
+    }
+};
