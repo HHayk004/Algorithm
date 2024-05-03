@@ -1,0 +1,43 @@
+QuichSort
+1) Partitioning
+2) sort right and left sides of the pivot
+
+Partitioning
+1) choose pivot
+2) bring pivot to the end ov array (if it is necessary)
+3) bring elements than is smaller pivot value to the beginning
+4) place pivot to the right place
+
+You can improve partitioning by adding good pivot choosing algorithms
+1) sort start, mid, end elements and bring mid elements to end and it is the pivot
+2) bring to back element with averange value
+3) choose every time pivot randomly
+
+T(n) = T(2n/3) + T(n/3) + O(n)
+
+T(2n/3) = T(4n/9) + T(2n/9) + O(2n/3)
+T(n/3) = T(2n/9) + T(n/9) + O(n/3)
+
+T(n) = T(4n/9) + 2 * T(2n/9) + T(n/9) + 2*O(n)
+T(n) = T((2 / 3) ^ k * n) + ... + k * O(n) (x / y) ^ k = 1 / n || k = log (y/x) (n)
+T(n) = n * log(y / x : n) y - haytarar x - max of sides and x != y (if x == y T(n) = n ^ 2)
+
+Counting sort
+count each element count
+recreate the sorted vector
+
+minuses
+1) extra space
+
+Tasks
+Which sorting algorithms is stable? (and what does mean stable)
+
+4 implementation of quicksort
+1) last elem is pivot (done)
+2) first elem is pivot
+3) averange value element (kam median 3)
+4) random pivot
+
+counting sort 2 ways
+
+razix sort (optional)
