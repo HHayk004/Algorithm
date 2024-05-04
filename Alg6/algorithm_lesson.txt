@@ -41,3 +41,12 @@ Which sorting algorithms is stable? (and what does mean stable)
 counting sort 2 ways
 
 razix sort (optional)
+
+Stablity of sorting algorithms:
+1) Selection sort: unstable - because first elem with this sort key becomes last in sorted sequence
+2) Bubble sort: stable - because there isn't swap between equal sort key elements
+3) Insertion sort: stable - because inserted element is inserted in possible, but further place for optimization
+4) Merge sort: can be stable, it depends on if conditions
+5) Quick sort: stable, first goes to begin, last goes to last
+6) Counting sort: no order (unstable)
+7) Razix sort: stable
