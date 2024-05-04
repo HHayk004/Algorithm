@@ -14,7 +14,7 @@
 
 # Executables
 *.exe
-*.out
+*.out*
 
 # CMake generated files
 */CMakeCache.txt
