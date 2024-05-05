@@ -1,0 +1,9 @@
+Stack and Queue are adapters, because it's limited version of Vector
+
+Queue can be cycle vector (from last you can go to first element)
+
+Tasks:
+implement search for vector
+
+Leetcode: 80, 1539, ev eli ka kuxarki dasaxosy
+
