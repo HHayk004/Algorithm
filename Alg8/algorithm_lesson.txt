@@ -1,0 +1,15 @@
+Tasks:
+
+From Leetcode do linked_list:
+1) reverse // iterative: prev, curr, next // recursive: with returning node (already done)
+2) sort
+3) has cycle 2 problems // two pointers
+4) merging iterative, 
+5) get mid node // two pointers too
+
+Prove that two pointers algorith for has cycle work for every cycle
+The prove: because relative speed of two pointers is one node per iteration and there can't be jumps over slow node 
+
+6) combine 4) (recursive) and 5) , write merge sort and find it's compexity
+
+141, 206, 876, 21, 148, 147, 142 are the problems' numbers
