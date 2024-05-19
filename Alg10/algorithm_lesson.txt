@@ -1,0 +1,22 @@
+There are lot of hash function implemented in map for random choosing 
+    (for aware of worst case as much as possible as in quicksort random pivot)
+
+Unordered map is "unordered" :), but map is ordered by using BST
+map, set and etc. is assosiative because the key is assosiative with the place (index)
+
+How should be hash function
+1) Determinism - everytype get same result for same value, object
+2) Uniformity - equal distribution
+3) New-reversibility - one way hashing (for security);
+4) Efficiency - for productifity
+
+Hash algorithms for string: fnv_1a (polinominal), jb2 (shifting)
+
+Sliding window teqnique: using for solve array subsequence problems
+
+Tasks:
+Corman hash table chapter
+
+Write hash_map with own hash function
+
+Leetcode: 3, 
