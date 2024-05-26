@@ -1,0 +1,74 @@
+Heap, Priority Queue 
+
+Heap and Priority Queue almost the same, but Priority Queue can contain with key the value also
+
+It's completed, but can be imagined as completed tree
+
+left(i) = i * 2 + 1
+right(i) = i * 2 + 2
+parent(i) = (i - 1) / 2
+
+Min heap: Every node value should be smaller than it's childrens' nodes' values 
+Max heap: Every node value should be bigger than it's childrens' nodes' values
+
+Has queue functionality: top, push, pop, size, isEmpty, heapify, buildHeap
+
+void heapify(i) // O(log(n))
+    smi = i, l = left(i), r = right(i);
+    if (arr[l] < arr[i])
+        smi = l
+    if (arr[r] < arr[shr])
+        smi = r
+
+    if (smi != i)
+    {
+        std::swap(arr[i], arr[smi]);
+
+        if (smi > arr.size() / 2 - 1) // children condition check
+            heapify(arr, smi);
+    }
+
+void pop()
+    std::swap(arr[0], arr[size - 1]);
+    heapify(0);
+
+    --size;
+
+void heapSort() // O(n*log(n))
+    buildMaxHeap(arr); // O(n)
+
+    for (int i = size - 1; i > 0; --i)
+    {
+        std::swap(arr[i], arr[0]);
+        heapify(i);
+    }
+
+Trees
+
+The first node is called root. It's only node that doesn't have parent.
+Binary because the node can have only two nodes as children. the connection between nodes called edge
+Tree have subtrees, which have it's own root
+
+Trees' types:
+1. perfect // sranq nayel
+2. complete
+3. full
+4. degenerate
+
+BST is the tree that every node is bigger that it's left subtree nodes values,
+but it's smaller that right subtree values
+
+BST's functionality is O(n), if it isn't balanced
+
+Traverce types
+1. DFS by depth
+2. BFS by levels
+
+Tasks:
+
+Write min heap and max heap
+
+HeapSort for outside of class
+
+Why HeapSort isn't use in the place of QuickSort? answer on this question
+
