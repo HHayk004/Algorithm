@@ -1,0 +1,103 @@
+Trees
+
+class Node {
+    T val;
+    Node* left;
+    Node* right;
+};
+
+Node getMinimum(*Node head) // O(n) same for getMaximum
+{
+    Node* node = head;
+    while (node->left)
+    {
+        node = node->left;
+    }
+    
+    return *node;
+}
+
+Node* getHeight(*Node head) // O(n)
+{
+    if (!head)
+    {
+        return 0;
+    }
+
+    size_t h_left = getHeight(head->left);
+    size_t h_right = getHeight(head->right);
+    return 1 + (h_left > h_right ? h_left : h_right);)
+}
+
+
+Node* insert(Node* node, T val)
+{
+    if (!node)
+    {
+        return new Node(val);
+    }
+
+    if (*node->val < val)
+    {
+        node->left = insert(node->left, val);
+    }
+
+    else
+    {
+        node->right = insert(node-right, val);)
+    }
+
+    return node;
+}
+
+Node* delete(Node* node, T val)
+{
+    if (!node)
+    {
+        return node;
+    }
+
+    if (*node->val < val)
+    {
+        node->left = delete(node->left, val);    
+    }
+
+    else if(*node->val > val)
+    {
+        node->right = delete(node->right, val);
+    }
+
+    else
+    {
+        if (!node->left)
+        {
+            Node* tmp = node->right;
+            delete node;
+            return tmp;
+        }
+
+        if (!node->right)
+        {
+            Node* tmp = node->left;
+            delete node;
+            return tmp;
+        }
+
+        Node* tmp = getMin(node->right);
+        node->val = tmp->val;
+
+        node->right = delete(node->right, tmp->val);
+    }
+
+    return node;
+}
+
+AVL
+
+BF - Balance Factor = max left node height - max right node height
+
+Tasks
+
+Write traversals with stack (not recursive)
+search (iterative and recursive) O(n)
+predecessor and successor (returns Node*) (iterative)
